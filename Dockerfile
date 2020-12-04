@@ -15,4 +15,3 @@ RUN apk add tzdata && \
     mv apache-maven-3.6.0 /maven
 ENV MAVEN_HOME=/maven
 ENV PATH $MAVEN_HOME/bin:$PATH
-ENTRYPOINT ["mvn","-v"]
