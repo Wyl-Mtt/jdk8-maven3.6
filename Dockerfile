@@ -12,6 +12,7 @@ RUN apk add tzdata && \
     apk add bash && \
     wget https://archive.apache.org/dist/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.tar.gz  && \ 
     tar -xvf apache-maven-3.6.0-bin.tar.gz && \
-    mv apache-maven-3.6.0 /maven
+    mv apache-maven-3.6.0 /maven && \
+    rm -rf /apache-maven-3.6.0
 ENV MAVEN_HOME=/maven
 ENV PATH $MAVEN_HOME/bin:$PATH
