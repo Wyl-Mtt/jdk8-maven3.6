@@ -8,7 +8,7 @@ RUN apk add tzdata && \
     apk upgrade && \
     apk add ca-certificates && \
     update-ca-certificates && \
-    apk add --update openjdk8-jre && \
+    apk add --update openjdk8 && \
     apk add bash && \
     wget https://archive.apache.org/dist/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.tar.gz  && \ 
     tar -xvf apache-maven-3.6.0-bin.tar.gz && \
